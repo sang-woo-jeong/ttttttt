@@ -22,7 +22,7 @@ window.addEventListener("load",function(){
   scene.add(light);
 
   //mesh 보조객체 생성
-  var geometry = new THREE.SphereGeometry(100,15,15);
+  /*var geometry = new THREE.SphereGeometry(100,15,15);
   var material = new THREE.MeshLambertMaterial({
     color:0xF3FFE2,
     wireframe:true
@@ -31,7 +31,7 @@ window.addEventListener("load",function(){
   var mesh = new THREE.Mesh(geometry, material);
   mesh.position.set(0,0,0);
   scene.add(mesh);
-  
+  */
   var mtlLoader = new THREE.MTLLoader();
   mtlLoader.load("./js/rose.mtl",function(materials){
     materials.preload();
