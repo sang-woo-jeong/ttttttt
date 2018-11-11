@@ -43,9 +43,9 @@ window.addEventListener("load",function(){
         x++;
         object.rotation.y = x*.1;
       },50)
-      object.rotation.x = .8;
+      object.rotation.x = .4;
       object.position.y = -50;
-      object.position.z = 100;
+      object.position.z = 60;
       scene.add(object);
     })
   })
