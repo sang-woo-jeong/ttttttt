@@ -33,11 +33,11 @@ window.addEventListener("load",function(){
   scene.add(mesh);
   
   var mtlLoader = new THREE.MTLLoader();
-  mtlLoader.load("/js/rose.mtl",function(materials){
+  mtlLoader.load("./js/rose.mtl",function(materials){
     materials.preload();
     var objLoader = new THREE.OBJLoader();
     objLoader.setMaterials(materials);
-    objLoader.load("/js/rose.obj",function(object){
+    objLoader.load("./js/rose.obj",function(object){
       var x = 0;
       setInterval(function(){
         x++;
